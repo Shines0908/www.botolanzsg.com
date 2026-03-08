@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZSG Internet | Fast, Affordable Fiber</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+
+/* GENERAL */
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* NAVIGATION */
+header {
+    background: #1a1a2e;
+    padding: 15px 0;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+header nav a {
+    color: #fff;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
+}
+header nav a:hover {
+    color: #e94560;
+}
+
+/* HERO SLIDER */
+.hero {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+.hero-slide {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+}
+.hero-text h1 {
+    font-size: 48px;
+    margin: 0;
+}
+.hero-text p {
+    font-size: 20px;
+}
+
+/* SERVICES */
+.services {
+    background: #f7f7f7;
+    padding: 60px 0;
+    text-align: center;
+}
+.services h2 {
+    margin-bottom: 30px;
+}
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.service-card {
+    background: white;
+    padding: 20px;
+    width: 260px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+}
+.service-card h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #1a1a2e;
+}
+
+/* ABOUT */
+.about {
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about img {
+    width: 45%;
+    border-radius: 8px;
+}
+.about-text {
+    width: 50%;
+}
+.about-text h2 {
+    margin-bottom: 20px;
+}
+
+/* PLANS */
+.plans {
+    padding: 60px 0;
+    background: #e9ecef;
+}
+.plan-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.plan-card {
+    background: white;
+    padding: 25px;
+    margin: 10px;
+    width: 280px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+}
+.plan-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.plan-card p {
+    margin: 8px 0;
+}
+.plan-card .price {
+    margin-top: 15px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+/* CONTACT */
+.contact {
+    background: #1a1a2e;
+    color: #fff;
+    text-align: center;
+    padding: 60px 0;
+}
+.contact h2 {
+    margin-bottom: 20px;
+}
+.contact input, .contact textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+}
+.contact button {
+    padding: 12px 30px;
+    background: #e94560;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    background: #171717;
+    color: #ccc;
+    padding: 20px 0;
+    text-align: center;
+}
+</style>
+
+</head>
+<body>
+
+<!-- HEADER / NAV -->
+<header>
+    <div class="nav-container container">
+        <div class="logo">ZSG Internet</div>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#plans">Plans</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO SLIDER -->
+<div class="hero">
+    <img class="hero-slide" src="https://images.pexels.com/photos/4348404/pexels-photo-4348404.jpeg" alt="Fast Internet">
+    <div class="hero-text container">
+        <h1>Fast & Reliable Fiber Internet</h1>
+        <p>Connect More. Play More. Stream More.</p>
+    </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services" class="services">
+    <div class="container">
+        <h2>What We Offer</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <img src="https://img.icons8.com/color/96/000000/wifi.png"/>
+                <h3>High Speed Internet</h3>
+                <p>Up to 200 Mbps & More</p>
+            </div>
+            <div class="service-card">
+                <img src="https://img.icons8.com/color/96/000000/network.png"/>
+                <h3>Business Connectivity</h3>
+                <p>Secure and Fast</p>
+            </div>
+            <div class="service-card">
+                <img src="https://img.icons8.com/color/96/000000/support.png"/>
+                <h3>24/7 Support</h3>
+                <p>We’re always online</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about container">
+    <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg" alt="About Us">
+    <div class="about-text">
+        <h2>About Us</h2>
+        <p>We deliver affordable, fast fiber internet across the region. Quality service and community connectivity is our passion.</p>
+    </div>
+</section>
+
+<!-- PLANS -->
+<section id="plans" class="plans container">
+    <h2>Our Internet Plans</h2>
+    <div class="plan-list">
+        <div class="plan-card">
+            <h3>60 Mbps</h3>
+            <p>Best for browsing & streaming.</p>
+            <div class="price">$20/mo</div>
+        </div>
+        <div class="plan-card">
+            <h3>100 Mbps</h3>
+            <p>Perfect for family usage.</p>
+            <div class="price">$35/mo</div>
+        </div>
+        <div class="plan-card">
+            <h3>300 Mbps</h3>
+            <p>Fast enough for business.</p>
+            <div class="price">$50/mo</div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <input type="text" placeholder="Your Name"><br>
+    <input type="email" placeholder="Your Email"><br>
+    <textarea rows="4" placeholder="Your Message"></textarea><br>
+    <button>Send Message</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2026 ZSG Internet — All Rights Reserved
+</footer>
+
+</body>
+</html>
